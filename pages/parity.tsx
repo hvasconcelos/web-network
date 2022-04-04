@@ -46,7 +46,7 @@ export default function ParityPage() {
   const formMaker = [
     formItem(t('parity:fields.github-token.label'), t('parity:fields.github-token.placeholder'), githubToken, (ev) => setGithubToken(ev?.target?.value)),
     formItem(t('parity:fields.github-login.label'), t('parity:fields.github-login.placeholder'), githubLogin, (ev) => setGithubLogin(ev?.target?.value)),
-    // formItem(`Read Repo`, `Github repo name to read from (pex bepro-js)`, readRepoName, (ev) => setReadRepoName(ev?.target?.value)),
+    // formItem(`Read Repo`, `Github repo name to read from (pex @taikai/dappkit)`, readRepoName, (ev) => setReadRepoName(ev?.target?.value)),
   ]
 
   function isValidForm() {
